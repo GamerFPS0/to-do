@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Tareas</title>
 </head>
+
 <body>
+
+
+    <div class="todo-container">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="new-todo" placeholder="Crear una nueva tarea...">
+    </div>
+
+    <!-- Contenedor para la lista de tareas y los filtros -->
+    <div class="list-container">
+        <h2 id="section-title">Todas las Tareas</h2>
+        <ul id="todo-list">
+            <!-- Tareas predefinidas -->
+
+        </ul>
+        <div class="filters">
+            <button id="all">Todas</button>
+            <button id="active">Sin hacer</button>
+            <button id="completed">Completadas</button>
+        </div>
+        <div class="action-buttons">
+            <button id="complete-all">Completar Todas</button>
+            <button id="uncomplete-all">Descompletar Todas</button>
+            <button id="delete-all">Eliminar Todas</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
     
 </body>
 </html>                                                         
